@@ -27,6 +27,7 @@ struct TextFieldModule: View {
                     .cornerRadius(10)
                     .keyboardType(.emailAddress)
                     .textInputAutocapitalization(.never)
+                    .textContentType(.emailAddress)
                 
                 SecureField("Password", text: $password) // for password like a TextField
                     .font(.subheadline)
@@ -35,6 +36,7 @@ struct TextFieldModule: View {
                     .cornerRadius(10)
                     .keyboardType(.emailAddress)
                     .textInputAutocapitalization(.never)
+                    .disableAutocorrection(true)
             }
             
             Button {
